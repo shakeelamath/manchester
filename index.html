@@ -19,7 +19,36 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<style>
+  .dropdown-menu {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: purple;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none; /* Hidden by default */
+  min-width: 200px;
+  z-index: 10;
+}
 
+.dropdown-menu li {
+  padding: 10px;
+}
+
+.dropdown-menu li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* Show on hover */
+}
+
+.dropdown-menu li a:hover {
+  background-color: black;
+}
+</style>
   </head>
 
 <body>
@@ -59,12 +88,18 @@
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
                       <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                      <li class="scroll-to-section"><a href="#services">Services</a></li>
-                      <li class="scroll-to-section"><a href="#courses">Courses</a></li>
-                      <li class="scroll-to-section"><a href="#team">Team</a></li>
-                      <li class="scroll-to-section"><a href="#events">Events</a></li>
-                      <li class="scroll-to-section"><a href="#contact">Register Now!</a></li>
-                  </ul>   
+                      <li class="scroll-to-section"><a href="about.html">About Us</a></li>
+                      <li class="scroll-to-section dropdown">
+                        <a href="programs.html">Courses</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="teacherTraining.html">Teacher Training</a></li>
+                          <li><a href="course2.html">Course 2</a></li>
+                          <li><a href="course3.html">Course 3</a></li>
+                        </ul>
+                      </li>
+                      <li class="scroll-to-section"><a href="#team">Events</a></li>
+                      <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
+                    </ul> 
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>
@@ -308,11 +343,16 @@
     </div>
   </div>
 
-  
-  <div class="section about-us">
+  <div class="contact-us section" id="contact">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 offset-lg-1">
+        <div class="col-lg-6  align-self-center">
+          <div class="section-heading">
+            <h2>Your Gateway to Global Opportunities</h2>
+            <p>Broaden your horizons with our study abroad programs, global partnerships, and international networking opportunities.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
           <div class="accordion" id="accordionExample">
             <ul style="list-style-type: disc; padding-left: 20px;">
               <li style="margin-bottom: 20px;">
@@ -328,19 +368,10 @@
             
           </div>
         </div>
-        <div class="col-lg-5 align-self-center">
-          <div class="section-heading">
-            <h2>Your Gateway to Global Opportunities</h2>
-            <p>Broaden your horizons with our study abroad programs, global partnerships, and international networking opportunities.</p>
-            <div class="main-button" style="margin-bottom: 10px;">
-              <a href="#">Discover More</a>
-            </div>
-          </div>
-        </div>
-       
       </div>
     </div>
   </div>
+  
 
   <!-- <div class="section fun-facts">
     <div class="container">
