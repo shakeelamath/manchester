@@ -19,7 +19,36 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<style>
+  .dropdown-menu {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: purple;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none; /* Hidden by default */
+  min-width: 200px;
+  z-index: 10;
+}
 
+.dropdown-menu li {
+  padding: 10px;
+}
+
+.dropdown-menu li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* Show on hover */
+}
+
+.dropdown-menu li a:hover {
+  background-color: black;
+}
+</style>
   </head>
 
 <body>
@@ -42,38 +71,38 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-              <nav class="main-nav">
-                <!-- ***** Logo Start ***** -->
-                <a href="index.html" class="logo">
-                    <h1>Manchester</h1>
-                </a>
-                <!-- ***** Logo End ***** -->
-                <!-- ***** Serach Start ***** -->
-               
-                <!-- ***** Serach Start ***** -->
-                <!-- ***** Menu Start ***** -->
-                <ul class="nav">
-                  <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                  <li class="scroll-to-section"><a href="about.html">About Us</a></li>
-                  <li class="scroll-to-section dropdown">
-                    <a href="programs.html">Courses</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="teacherTraining.html">Teacher Training</a></li>
-                      <li><a href="postgraduate.html">Postgraduate</a></li>
-                      <li><a href="career.html">Career Progression</a></li>
-                      <li><a href="careerTracks.html">Specialized Career Tracks</a></li>
-                      <li><a href="online.html">Online Learning</a></li>
+               <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <h1>Manchester</h1>
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Serach Start ***** -->
+                   
+                    <!-- ***** Serach Start ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                      <li class="scroll-to-section"><a href="about.html">About Us</a></li>
+                      <li class="scroll-to-section dropdown">
+                        <a href="programs.html">Courses</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="teacherTraining.html">Teacher Training</a></li>
+                          <li><a href="postgraduate.html">Postgraduate</a></li>
+                          <li><a href="career.html">Career Progression</a></li>
+                          <li><a href="careerTracks.html">Specialized Career Tracks</a></li>
+                          <li><a href="online.html">Online Learning</a></li>
 
-                    </ul>
-                  </li>
-                  <li class="scroll-to-section"><a href="#">Events</a></li>
-                  <li class="scroll-to-section"><a href="contact.html">Contact Us</a></li>
-                </ul> 
-                <a class='menu-trigger'>
-                    <span>Menu</span>
-                </a>
-                <!-- ***** Menu End ***** -->
-            </nav>
+                        </ul>
+                      </li>
+                      <li class="scroll-to-section"><a href="#">Events</a></li>
+                      <li class="scroll-to-section"><a href="contact.html">Contact Us</a></li>
+                    </ul> 
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
             </div>
         </div>
     </div>
@@ -87,13 +116,14 @@
           <div class="owl-carousel owl-banner">
             <div class="item item-1">
               <div class="header-text">
-                <h2>Programs Designed for Your Success</h2>
-                <p>From undergraduate degrees to professional certifications, we offer programs tailored to your goals.</p>
+                <span class="category">Contact Us</span>
+                <h2>Your Future Starts Here</h2>
+                <p>Get all the information you need to join Manchester British Campus.</p>
                 <div class="buttons">
                   <div class="main-button">
-                    <a href="#">Explore all Programs</a>
+                    <a href="#">Request Demo</a>
                   </div>
-                  
+    
                 </div>
               </div>
             </div>
@@ -103,81 +133,8 @@
     </div>
   </div>
 
-
-  <div class="services section" id="services">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <img src="assets/images/service-01.png" alt="online degrees">
-            </div>
-            <div class="main-content">
-              <h4>Teacher Training & Education</h4>
-              <div class="main-button">
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <img src="assets/images/service-02.png" alt="short courses">
-            </div>
-            <div class="main-content">
-              <h4>Postgraduate & Advanced Diplomas</h4>
-              <div class="main-button">
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <img src="assets/images/service-03.png" alt="web experts">
-            </div>
-            <div class="main-content">
-              <h4>Career Progression and Specialization</h4>
-              <div class="main-button">
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <img src="assets/images/service-03.png" alt="web experts">
-            </div>
-            <div class="main-content">
-              <h4>Specialized Career Tracks</h4>
-              <div class="main-button">
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <img src="assets/images/service-03.png" alt="web experts">
-            </div>
-            <div class="main-content">
-              <h4>Internationally Recognized & Flexible Online Learning</h4>
-              <div class="main-button">
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   
-
+ 
 
   <!-- <div class="section fun-facts">
     <div class="container">
@@ -279,7 +236,6 @@
     </div>
   </div>  -->
 
-  
 
  
 
