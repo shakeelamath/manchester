@@ -49,6 +49,36 @@
   background-color: black;
 }
 </style>
+<style>
+  .dropdown-menu {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: purple;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none; /* Hidden by default */
+  min-width: 300px;
+  z-index: 10;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+}
+
+.dropdown-menu li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* Show on hover */
+}
+
+.dropdown-menu li a:hover {
+  background-color: black;
+}
+</style>
   </head>
 
 <body>
@@ -82,7 +112,7 @@
                     <!-- ***** Serach Start ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                      <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                      <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
                       <li class="scroll-to-section"><a href="about.html">About Us</a></li>
                       <li class="scroll-to-section dropdown">
                         <a href="programs.html">Courses</a>
@@ -119,14 +149,7 @@
                 <span class="category">Our Courses</span>
                 <h2>Turn Your Aspirations into Reality at Manchester British Campus</h2>
                 <p>Empowering individuals through world-class education, we provide the tools to unlock your future. Explore our internationally recognized programs and life-changing opportunities today.</p>
-                <div class="buttons">
-                  <div class="main-button">
-                    <a href="#">Request Demo</a>
-                  </div>
-                  <div class="icon-button">
-                    <a href="#"><i class="fa fa-play"></i> What's Scholar?</a>
-                  </div>
-                </div>
+                
               </div>
             </div>
             <div class="item item-2">
@@ -149,14 +172,7 @@
                 <span class="category">Online Learning</span>
                 <h2>Online Learning helps you save the time</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporious incididunt ut labore et dolore magna aliqua suspendisse.</p>
-                <div class="buttons">
-                  <div class="main-button">
-                    <a href="#">Request Demo</a>
-                  </div>
-                  <div class="icon-button">
-                    <a href="#"><i class="fa fa-play"></i> What's Online Course?</a>
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -352,7 +368,7 @@
             <p>Broaden your horizons with our study abroad programs, global partnerships, and international networking opportunities.</p>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6" style="margin-top: 50px;">
           <div class="accordion" id="accordionExample">
             <ul style="list-style-type: disc; padding-left: 20px;">
               <li style="margin-bottom: 20px;">
@@ -473,7 +489,7 @@
     </div>
   </div>  -->
 
-  <div class="section testimonials">
+  <div class="section testimonials" style="margin-top: 50px;">
     <div class="container">
       <div class="row">
         <div class="col-lg-7">
