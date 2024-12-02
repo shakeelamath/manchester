@@ -19,95 +19,109 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-<style>
-  .dropdown-menu {
-  list-style: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: purple;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  display: none; /* Hidden by default */
-  min-width: 300px;
-  z-index: 10;
+    <style>
+      .dropdown-menu {
+       list-style: none;
+       position: absolute;
+       top: 100%;
+       left: 0;
+       background-color: #efbf04;
+       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+       display: none; /* Hidden by default */
+       min-width: 300px;
+       z-index: 10;
+     }
+     
+     .dropdown-menu li {
+       padding: 10px;
+     }
+     
+     .dropdown-menu li a {
+       color: black;
+       text-decoration: none;
+     }
+     
+     .dropdown-icon {
+       cursor: pointer;
+       font-size: 12px;
+     }
+     
+     .dropdown-menu li a:hover {
+       background-color: black;
+     }
+    .dropdown {
+  display: flex;
 }
 
-.dropdown-menu li {
-  padding: 10px;
+.dropdown a {
+  display: inline-block; /* Ensure proper alignment */
 }
 
-.dropdown-menu li a {
-  color: #333;
-  text-decoration: none;
+.dropdown-icon {
+  cursor: pointer;
+  margin-top: 10px;
+
 }
-
-.dropdown:hover .dropdown-menu {
-  display: block; /* Show on hover */
-}
-
-.dropdown-menu li a:hover {
-  background-color: black;
-}
-</style>
-
-  </head>
-
-<body>
-
-  <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div>
-  <!-- ***** Preloader End ***** -->
-
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-              <nav class="main-nav">
-                <!-- ***** Logo Start ***** -->
-                <a href="index.html" class="logo">
-                    <h1>Manchester</h1>
-                </a>
-                <!-- ***** Logo End ***** -->
-                <!-- ***** Serach Start ***** -->
-               
-                <!-- ***** Serach Start ***** -->
-                <!-- ***** Menu Start ***** -->
-                <ul class="nav">
-                  <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
-                  <li class="scroll-to-section"><a href="about.html">About Us</a></li>
-                  <li class="scroll-to-section dropdown">
-                    <a href="programs.html">Courses</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="teacherTraining.html">Teacher Training</a></li>
-                      <li><a href="postgraduate.html">Postgraduate</a></li>
-                      <li><a href="career.html">Career Progression</a></li>
-                      <li><a href="careerTracks.html">Specialized Career Tracks</a></li>
-                      <li><a href="online.html">Online Learning</a></li>
-
-                    </ul>
-                  </li>
-                  <li class="scroll-to-section"><a href="#">Events</a></li>
-                  <li class="scroll-to-section"><a href="contact.html">Contact Us</a></li>
-                </ul> 
-                <a class='menu-trigger'>
-                    <span>Menu</span>
-                </a>
-                <!-- ***** Menu End ***** -->
-            </nav>
-            </div>
-        </div>
-    </div>
-  </header>
+     
+     </style>
+       </head>
+     
+     <body>
+     
+       <!-- ***** Preloader Start ***** -->
+       <div id="js-preloader" class="js-preloader">
+         <div class="preloader-inner">
+           <span class="dot"></span>
+           <div class="dots">
+             <span></span>
+             <span></span>
+             <span></span>
+           </div>
+         </div>
+       </div>
+       <!-- ***** Preloader End ***** -->
+     
+       <!-- ***** Header Area Start ***** -->
+       <header class="header-area header-sticky">
+         <div class="container">
+             <div class="row">
+                 <div class="col-12">
+                     <nav class="main-nav">
+                         <!-- ***** Logo Start ***** -->
+                         <a href="index.html" class="logo">
+                             <h1>Manchester</h1>
+                         </a>
+                         <!-- ***** Logo End ***** -->
+                         <!-- ***** Serach Start ***** -->
+                        
+                         <!-- ***** Serach Start ***** -->
+                         <!-- ***** Menu Start ***** -->
+                         <ul class="nav">
+                           <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
+                           <li class="scroll-to-section"><a href="about.html">About Us</a></li>
+                           <li class="scroll-to-section dropdown">
+                             <a href="programs.html">Courses</a>
+                             <img src="assets/images/down.png" alt="Dropdown Icon" class="dropdown-icon" style="height: 20px; width: 20px; margin-left: -10px;" />                         <ul class="dropdown-menu">
+                               <li><a href="teacherTraining.html">Teacher Training</a></li>
+                               <li><a href="postgraduate.html">Postgraduate</a></li>
+                               <li><a href="career.html">Career Progression</a></li>
+                               <li><a href="careerTracks.html">Specialized Career Tracks</a></li>
+                               <li><a href="online.html">Online Learning</a></li>
+                             </ul>
+                           </li>
+                           
+                           <li class="scroll-to-section"><a href="#">Events</a></li>
+                           <li class="scroll-to-section"><a href="contact.html">Contact Us</a></li>
+                         </ul> 
+                         <a class='menu-trigger'>
+                             <span>Menu</span>
+                         </a>
+                         <!-- ***** Menu End ***** -->
+                     </nav>
+                 </div>
+             </div>
+         </div>
+       </header>
   <!-- ***** Header Area End ***** -->
 
   <div class="main-banner" id="top">
@@ -479,6 +493,24 @@
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/counter.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const dropdownIcon = document.querySelector('.dropdown-icon');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+  
+    dropdownIcon.addEventListener('click', (e) => {
+      e.stopPropagation(); // Prevent click events from bubbling
+      dropdownMenu.style.display =
+        dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    });
+  
+    // Optional: Hide the dropdown menu when clicking outside
+    document.addEventListener('click', () => {
+      dropdownMenu.style.display = 'none';
+    });
+  });
+  
+   </script>
 
   </body>
 </html>
