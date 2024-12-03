@@ -20,48 +20,45 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <style>
-      .dropdown-menu {
-       list-style: none;
-       position: absolute;
-       top: 100%;
-       left: 0;
-       background-color: #efbf04;
-       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-       display: none; /* Hidden by default */
-       min-width: 300px;
-       z-index: 10;
-     }
-     
-     .dropdown-menu li {
-       padding: 10px;
-     }
-     
-     .dropdown-menu li a {
-       color: black;
-       text-decoration: none;
-     }
-     
-     .dropdown-icon {
-       cursor: pointer;
-       font-size: 12px;
-     }
-     
-     .dropdown-menu li a:hover {
-       background-color: black;
-     }
-    .dropdown {
-  display: flex;
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: column; /* Stack menu items vertically */
+    width: 100%; /* Full width for the nav menu */
+  }
+
+  .nav li {
+    width: 100%; /* Ensure each item takes full width */
+    text-align: center; /* Center the text */
+  }
+
+  .dropdown {
+    position: relative; /* Allow dropdown menu to position correctly */
+    width: 100%; /* Full width for dropdown button */
+  }
+
+  .dropdown a {
+    width: 100%; /* Full width for the button */
+    display: block; /* Ensure block-level behavior */
+  }
+
+  .dropdown-menu {
+    position: relative; /* Ensure dropdown aligns properly */
+    width: 100%; /* Full width for dropdown menu */
+    max-height: 150px; /* Add scrollable height */
+    overflow-y: auto;
+  }
+
+  .dropdown-icon {
+    position: absolute;
+    right: 10px; /* Align icon to the right */
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
-.dropdown a {
-  display: inline-block; /* Ensure proper alignment */
-}
 
-.dropdown-icon {
-  cursor: pointer;
-  margin-top: 10px;
-
-}
      
      </style>
        </head>
@@ -129,19 +126,12 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="owl-carousel owl-banner">
-            <div class="item <a href="index.html" class="logo">
-                        <img src="assets/images/manchesterlogowhite.png" alt="" style="height: 70px; width: auto;">
-                    </a>">
+            <div class="item" style="background-image: url(assets/images/contact.png);">
               <div class="header-text">
                 <span class="category">Contact Us</span>
                 <h2>Your Future Starts Here</h2>
                 <p>Get all the information you need to join Manchester British Campus.</p>
-                <div class="buttons">
-                  <div class="main-button">
-                    <a href="#">Request Demo</a>
-                  </div>
-    
-                </div>
+                
               </div>
             </div>
           </div>
