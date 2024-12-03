@@ -20,47 +20,60 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <style>
-/* Mobile view adjustments */
-@media (max-width: 768px) {
-  .nav {
-    display: flex;
-    flex-direction: column; /* Stack menu items vertically */
-    width: 100%; /* Full width for the nav menu */
-  }
-
-  .nav li {
-    width: 100%; /* Ensure each item takes full width */
-    text-align: center; /* Center the text */
-  }
-
-  .dropdown {
-    position: relative; /* Allow dropdown menu to position correctly */
-    width: 100%; /* Full width for dropdown button */
-  }
-
-  .dropdown a {
-    width: 100%; /* Full width for the button */
-    display: block; /* Ensure block-level behavior */
-  }
-
-  .dropdown-menu {
-    position: relative; /* Ensure dropdown aligns properly */
-    width: 100%; /* Full width for dropdown menu */
-    max-height: 150px; /* Add scrollable height */
-    overflow-y: auto;
-  }
-
-  .dropdown-icon {
-    position: absolute;
-    right: 10px; /* Align icon to the right */
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
-
-
-     
-     </style>
+      .dropdown-menu {
+        list-style: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #efbf04;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: none; /* Hidden by default */
+        width: 400px;
+        z-index: 10;
+        max-height: 200px; /* Limit the height of the dropdown */
+        overflow-y: auto; /* Enable vertical scrolling */
+        scrollbar-width: thin; /* Adjust scrollbar for modern browsers */
+        scrollbar-color: #cccccc transparent; /* Set scrollbar colors */
+      }
+      
+      
+      .dropdown-menu li a {
+        color: black;
+        text-decoration: none;
+      }
+      
+      .dropdown-icon {
+        cursor: pointer;
+        font-size: 12px;
+        margin-top: 10px;
+      }
+      
+      .dropdown-menu li a:hover {
+        background-color: black;
+      }
+      
+      /* Customize scrollbar for Webkit browsers (Chrome, Safari, etc.) */
+      .dropdown-menu::-webkit-scrollbar {
+        width: 8px;
+      }
+      
+      .dropdown-menu::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      
+      .dropdown-menu::-webkit-scrollbar-thumb {
+        background: #cccccc;
+        border-radius: 4px;
+      }
+      
+          .dropdown {
+        display: flex;
+      }
+      
+      
+      
+           
+           </style>
        </head>
      
      <body>
