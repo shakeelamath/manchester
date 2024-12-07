@@ -669,7 +669,7 @@ Banner Style
 
 .main-banner {
   position: relative; /* Ensure the pseudo-element stays within this container */
-  background-image: url(../images/bgmanchester.png);
+  background-image: url(../images/bgm.png);
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -680,7 +680,7 @@ Banner Style
 
 
 .main-banner .item-1 {
-  background-image: url(../images/banner-item-01.jpg);
+  background-image: url(../images/aspirationsmain.jpg);
 }
 
 .main-banner .item-2 {
