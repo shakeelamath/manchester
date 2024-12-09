@@ -673,7 +673,7 @@ Banner Style
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 170px 0px 120px 0px;
+  padding: 100px 0px 0px 0px;
   z-index: 1;
 }
 
@@ -696,8 +696,8 @@ Banner Style
   background-position: center center;
   background-size: cover;
   border-radius: 25px;
-  padding: 100px 100px;
-  margin-left: 130px;
+  padding: 200px 0px;
+  margin-left: 0px;
 }
 
 .main-banner .item span.category {
