@@ -804,6 +804,58 @@ Banner Style
 Services Style
 --------------------------------------------- 
 */
+.services1 .service-item1:hover .icon1 img {
+  margin-top: -10px;
+}
+
+.services1 .service-item1 {
+  position: relative;
+  margin-top: 95px;
+ 
+}
+
+.services1 .service-item1 .icon1 {
+  width: 190px;
+  height: 190px;
+  display: inline-block;
+  text-align: center;
+  line-height: 190px;
+  background-color: #08053C;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: -95px;
+}
+
+.services1 .service-item1 .icon1 img {
+  max-width: 86px;
+  transition: all .2s;
+}
+
+.services1 .service-item1 .main-content1 {
+  border-radius: 25px;
+  padding: 80px 30px 50px 30px;
+  background-color: #f1f0fe;
+  margin-bottom: 30px;
+  margin-right: 80px;
+  transition: all .4s;
+}
+
+.services1 .service-item1 h4 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 30px;
+  transition: all .4s;
+}
+
+.services1 .service-item1 p {
+  color: #4a4a4a;
+  margin-bottom: 25px;
+}
+
+
+
 
 .services .service-item:hover .icon img {
   margin-top: -10px;
