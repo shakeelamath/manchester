@@ -820,17 +820,21 @@ Services Style
   display: inline-block;
   text-align: center;
   line-height: 190px;
-  background-color: #08053C;
-  border-radius: 50%;
+  border-radius: 5%; /* Makes the container circular */
   position: absolute;
   right: 0;
   top: -95px;
+  overflow: hidden; /* Ensures the image stays within the circle */
 }
 
 .services1 .service-item1 .icon1 img {
-  max-width: 86px;
-  transition: all .2s;
+  width: 100%; /* Fill the width of the circle */
+  height: 100%; /* Fill the height of the circle */
+  object-fit: cover; /* Ensures the image covers the entire container without distortion */
+  border-radius: 50%; /* Ensures the image matches the circular shape */
+  transition: all 0.2s ease-in-out; /* Optional: Smooth transitions on hover */
 }
+
 
 .services1 .service-item1 .main-content1 {
   border-radius: 25px;
