@@ -812,6 +812,50 @@ Services Style
 .services .service-item {
   position: relative;
   margin-top: 95px;
+  max-height: 350px; /* Set minimum height */
+  min-height: 350px;
+  background: rgb(2,0,36);
+  background: linear-gradient(356deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column; /* Stack content */
+  justify-content: space-between;
+  overflow: hidden; /* Align content within the box */
+}
+.services .service-item .image-container {
+  flex: 0 0 80%; /* Ensure this section occupies exactly 70% of the parent's height */
+  max-height: 70%; /* Prevent stretching beyond 70% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services .service-item .image-container img {
+  width: 100%; /* Ensure the image scales properly */
+  height: 100%; /* Cover the allocated height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  border-top-left-radius: 25px; /* Match service-item corners */
+  border-top-right-radius: 25px;
+}
+.services .service-item .text-container {
+  flex: 1 0 20%; /* Ensure this section occupies 30% of the parent's height */
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden; /* Prevent overflowing content */
+}
+
+.services .service-item .text-container h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 22px;
+  color: white;
+}
+
+.services .service-item .text-container .main-button {
+  margin-top: 10px;
 }
 
 .services .service-item .icon {
@@ -940,6 +984,44 @@ h2.accordion-header button {
   line-height: 28px;
   color: #4a4a4a;
 }
+.accordion ul {
+  padding: 0;
+  margin: 0;
+}
+
+.accordion li {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f1f0fe; /* Light grey background */
+  text-decoration: none;
+  padding: 15px 20px;
+  color: black;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-link:hover {
+  background-color: #d4d4d4; /* Slightly darker grey on hover */
+}
+
+.accordion-link span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.accordion-arrow {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
 
 .about-us .section-heading {
   margin-left: 60px;
