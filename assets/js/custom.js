@@ -58,20 +58,27 @@
 
 	$('.owl-banner').owlCarousel({
 		center: true,
-      items:1,
-      loop:true,
-      nav: true,
-	  navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
-      margin:30,
-      responsive:{
-        992:{
-            items:1
-        },
-		1200:{
-			items:1
+		items: 1,
+		loop: true,
+		nav: true,
+		navText: [
+			'<i class="fa fa-angle-left" aria-hidden="true"></i>',
+			'<i class="fa fa-angle-right" aria-hidden="true"></i>'
+		],
+		margin: 30,
+		autoplay: true, // Enable autoplay
+		autoplayTimeout: 3000, // Set the timeout to 3 seconds (3000ms)
+		autoplayHoverPause: true, // Pause autoplay when hovering
+		responsive: {
+			992: {
+				items: 1
+			},
+			1200: {
+				items: 1
+			}
 		}
-      }
 	});
+	
 
 	$('.owl-testimonials').owlCarousel({
 	  center: true,
