@@ -696,7 +696,7 @@ Banner Style
   background-position: center center;
   background-size: cover;
   border-radius: 25px;
-  padding: 100px 0px;
+  padding: 300px 0px;
   margin-left: 0px;
 }
 @media (max-width: 768px) {
@@ -711,7 +711,7 @@ Banner Style
     background-size: contain; /* Ensures no cropping occurs */
     padding: 100px; /* Adjust padding if needed */
     aspect-ratio: 16 / 9; 
-    margin-top: -200px;
+    margin-top: -150px;
     /* Maintain horizontal layout */
   }
 
