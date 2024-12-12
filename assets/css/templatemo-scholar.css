@@ -696,8 +696,29 @@ Banner Style
   background-position: center center;
   background-size: cover;
   border-radius: 25px;
-  padding: 200px 0px;
+  padding: 100px 0px;
   margin-left: 0px;
+}
+@media (max-width: 768px) {
+  .main-banner {
+    background-size: 300% 350%; /* Zoom in horizontally, cropping by half */
+    background-position: center center; /* Focus on the top center of the image */
+    height: 55vh; /* Ensure the height is reduced to complement the crop */
+    padding: 0; /* Adjust padding for mobile view */
+  }
+  
+  .main-banner .item {
+    background-size: contain; /* Ensures no cropping occurs */
+    padding: 100px; /* Adjust padding if needed */
+    aspect-ratio: 16 / 9; 
+    margin-top: -200px;
+    /* Maintain horizontal layout */
+  }
+
+  .main-banner .header-text h2,
+  .main-banner .header-text p {
+    color: #fff; /* Ensure text is visible in mobile view */
+  }
 }
 
 .main-banner .item span.category {
