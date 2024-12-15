@@ -71,6 +71,29 @@
     .dropdown {
   display: flex;
 }
+/* Ensure full width for dropdown links in mobile view */
+@media (max-width: 768px) {
+  .dropdown {
+    display: block; /* Ensure dropdown behaves as a block */
+  }
+
+  .dropdown a {
+    display: block; /* Make the link span full width */
+    width: 100%;
+    padding: 10px; /* Add padding for better touch interaction */
+    box-sizing: border-box; /* Include padding in width */
+  }
+
+  .dropdown-menu {
+    width: 100%; /* Full width for the dropdown menu */
+  }
+  .dropdown-icon {
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: -5px;
+}
+}
+
 
 
 
@@ -110,9 +133,13 @@
                     <ul class="nav">
                       <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
                       <li class="scroll-to-section"><a href="about.html">About Us</a></li>
+                      
+                      <!-- Dropdown Menu -->
                       <li class="scroll-to-section dropdown">
-                        <a href="programs.html">Courses</a>
-                        <img src="assets/images/down.png" alt="Dropdown Icon" class="dropdown-icon" style="height: 20px; width: 20px; margin-left: -10px;" />                         <ul class="dropdown-menu">
+                        <a href="programs.html">Courses 
+                          <img src="assets/images/down.png" alt="Dropdown Icon" class="dropdown-icon" style="height: 20px; width: 20px; margin-left: 5px;" />
+                        </a>
+                        <ul class="dropdown-menu">
                           <li><a href="teacherTraining.html">Teacher Training</a></li>
                           <li><a href="postgraduate.html">Postgraduate</a></li>
                           <li><a href="career.html">Career Progression</a></li>
@@ -123,10 +150,13 @@
                       
                       <li class="scroll-to-section"><a href="#">Events</a></li>
                       <li class="scroll-to-section"><a href="contact.html">Contact Us</a></li>
-                    </ul> 
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
+                    </ul>
+                    
+                    <!-- Menu Trigger -->
+                    <a class="menu-trigger">
+                      <span>Menu</span>
                     </a>
+                    
                     <!-- ***** Menu End ***** -->
                 </nav>
             </div>
@@ -233,7 +263,12 @@
 
   <div class="services section" id="services">
     <div class="container">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center g-lg-5">
+
+        
+          <h2 style="text-align: center;">Our Programs</h2>
+         
+        
         <div class="col-lg-3 col-md-6">
           <div class="service-item">
             <div class="image-container">
@@ -241,9 +276,7 @@
             </div>
             <div class="text-container">
               <h4>Teacher Training & Education</h4>
-              <div class="main-button">
-                <a href="teacherTraining.html">Read More</a>
-              </div>
+
             </div>
           </div>
         </div>
@@ -254,9 +287,7 @@
             </div>
             <div class="text-container">
               <h4>Postgraduate and Advanced Diplomas</h4>
-              <div class="main-button">
-                <a href="teacherTraining.html">Read More</a>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -267,28 +298,18 @@
             </div>
             <div class="text-container">
               <h4>Career Progression and Specialization</h4>
-              <div class="main-button">
-                <a href="career.html">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Center align these two items -->
-        <div class="col-lg-3 col-md-6">
-          <div class="service-item">
-            <div class="image-container">
-              <img src="assets/images/careertraining.jpg" alt="Teacher Training" />
-            </div>
-            <div class="text-container">
-              <h4>Specialized Career Tracks</h4>
-              <div class="main-button">
-                <a href="careerTracks.html">Read More</a>
-              </div>
+              
             </div>
           </div>
         </div>
         
+        
+        
         </div>
+        
+      </div>
+      <div class="main-button1" style="text-align: center; margin-top: 20px;">
+        <a href="programs.html">Explore Courses</a>
       </div>
     </div>
   </div>

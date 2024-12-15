@@ -69,6 +69,29 @@
           .dropdown {
         display: flex;
       }
+      /* Ensure full width for dropdown links in mobile view */
+      @media (max-width: 768px) {
+        .dropdown {
+          display: block; /* Ensure dropdown behaves as a block */
+        }
+      
+        .dropdown a {
+          display: block; /* Make the link span full width */
+          width: 100%;
+          padding: 10px; /* Add padding for better touch interaction */
+          box-sizing: border-box; /* Include padding in width */
+        }
+      
+        .dropdown-menu {
+          width: 100%; /* Full width for the dropdown menu */
+        }
+        .dropdown-icon {
+        cursor: pointer;
+        font-size: 12px;
+        margin-top: -5px;
+      }
+      }
+      
       
       
       
@@ -160,7 +183,7 @@
             <div class="accordion" id="accordionExample">
                 <ul style="list-style-type: disc; padding-left: 20px;">
                   <li style="margin-bottom: 20px;">
-                    <h4 style="color: white;">Our Teacher Training & Education programs provide individuals with the foundational knowledge and specialized skills necessary to succeed in diverse teaching environments. Whether you're a beginner or an experienced professional, our courses equip you with the tools you need to make a difference in education and child development. From early childhood education to special needs teaching, we offer internationally recognized diplomas and certifications to help you advance your career in the education field.</h4>
+                    <p style="color: white; font-size: large; ">Our Teacher Training & Education programs provide individuals with the foundational knowledge and specialized skills necessary to succeed in diverse teaching environments. Whether you're a beginner or an experienced professional, our courses equip you with the tools you need to make a difference in education and child development. From early childhood education to special needs teaching, we offer internationally recognized diplomas and certifications to help you advance your career in the education field.</h4>
                   </li>
                  
                 </ul>
@@ -183,7 +206,7 @@
   <div class="services1 section" id="services1">
     <div class="container">
       <div class="row">
-        <h2>Our Training Programs</h2>
+        <h2 style="text-align: center;">Our Training Programs</h2>
         <div class="col-lg-12 col-md-6">
             <div class="service-item1">
              

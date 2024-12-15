@@ -69,6 +69,29 @@
           .dropdown {
         display: flex;
       }
+      /* Ensure full width for dropdown links in mobile view */
+      @media (max-width: 768px) {
+        .dropdown {
+          display: block; /* Ensure dropdown behaves as a block */
+        }
+      
+        .dropdown a {
+          display: block; /* Make the link span full width */
+          width: 100%;
+          padding: 10px; /* Add padding for better touch interaction */
+          box-sizing: border-box; /* Include padding in width */
+        }
+      
+        .dropdown-menu {
+          width: 100%; /* Full width for the dropdown menu */
+        }
+        .dropdown-icon {
+        cursor: pointer;
+        font-size: 12px;
+        margin-top: -5px;
+      }
+      }
+      
       
       
       
