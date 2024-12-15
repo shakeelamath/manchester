@@ -71,30 +71,33 @@
       }
       /* Ensure full width for dropdown links in mobile view */
       @media (max-width: 768px) {
-        .dropdown {
-          display: block; /* Ensure dropdown behaves as a block */
-        }
-      
-        .dropdown a {
-          display: block; /* Make the link span full width */
-          width: 100%;
-          padding: 10px; /* Add padding for better touch interaction */
-          box-sizing: border-box; /* Include padding in width */
-        }
-      
-        .dropdown-menu {
-          width: 100%; /* Full width for the dropdown menu */
-        }
-        .dropdown-icon {
-        cursor: pointer;
-        font-size: 12px;
-        margin-top: -5px;
-      }
-      }
-      
-      
-      
-      
+  
+
+  .dropdown {
+    display: flex; /* Ensure flex layout */
+    align-items: center; /* Align icon and text horizontally */
+    height: auto;
+  }
+
+  .dropdown a {
+    display: inline-block; /* Keep the link inline for proper alignment */
+    width: 100%; /* Adjust width to fit content */
+    padding: 10px; /* Maintain touch-friendly padding */
+    box-sizing: border-box;
+  }
+
+  .dropdown-menu {
+    width: 100%; 
+  }
+
+  .dropdown-icon {
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 0; 
+    
+  }
+}
+
            
            </style>
        </head>
@@ -130,8 +133,8 @@
                          <!-- ***** Serach Start ***** -->
                          <!-- ***** Menu Start ***** -->
                          <ul class="nav">
-                           <li class="scroll-to-section"><a href="index.html" >Home</a></li>
-                           <li class="scroll-to-section"><a href="about.html"class="active">About Us</a></li>
+                           <li class="scroll-to-section"><a href="index.html">Home</a></li>
+                           <li class="scroll-to-section"><a href="about.html" >About Us</a></li>
                            <li class="scroll-to-section dropdown">
                              <a href="programs.html">Courses</a>
                              <img src="assets/images/down.png" alt="Dropdown Icon" class="dropdown-icon" style="height: 20px; width: 20px; margin-left: -10px;" />                         <ul class="dropdown-menu">
@@ -254,7 +257,7 @@
         <div class="col-lg-3 col-md-6">
           <div class="service-item1">
             <div class="icon1">
-              <img src="assets/images/certificateicon.png" alt="online degrees">
+              <img src="assets/images/qualificationsicon.png" alt="online degrees">
             </div>
             <div class="main-content1">
               <h4>Globally recognized qualifications</h4>
@@ -265,7 +268,7 @@
         <div class="col-lg-3 col-md-6">
           <div class="service-item1">
             <div class="icon1">
-              <img src="assets/images/high-five.png" alt="short courses">
+              <img src="assets/images/topuniicon.png" alt="short courses">
             </div>
             <div class="main-content1">
               <h4>Partnerships with top universities</h4>
@@ -276,7 +279,7 @@
         <div class="col-lg-3 col-md-6 ">
           <div class="service-item1" >
             <div class="icon1">
-              <img src="assets/images/monitoring.png" alt="web experts">
+              <img src="assets/images/facilitiesicon.png" alt="web experts">
             </div>
             <div class="main-content1">
               <h4>State-of-the-art facilities built</h4>
@@ -287,7 +290,7 @@
         <div class="col-lg-3 col-md-6">
           <div class="service-item1">
             <div class="icon1">
-              <img src="assets/images/lawyer.png" alt="web experts">
+              <img src="assets/images/industryicon.png" alt="web experts">
             </div>
             <div class="main-content1">
               <h4>Industry-driven curriculum</h4>
