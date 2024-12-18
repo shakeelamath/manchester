@@ -30,7 +30,7 @@
         display: none; /* Hidden by default */
         width: 400px;
         z-index: 10;
-        max-height: 200px; /* Limit the height of the dropdown */
+        /* Limit the height of the dropdown */
         overflow-y: auto; /* Enable vertical scrolling */
         scrollbar-width: thin; /* Adjust scrollbar for modern browsers */
         scrollbar-color: #cccccc transparent; /* Set scrollbar colors */
@@ -71,32 +71,45 @@
       }
       /* Ensure full width for dropdown links in mobile view */
       @media (max-width: 768px) {
-  
-
-  .dropdown {
-    display: flex; /* Ensure flex layout */
-    align-items: center; /* Align icon and text horizontally */
-    height: auto;
+        .dropdown-menu {
+    position: absolute; /* Ensure dropdown is positioned correctly */
+    left: 0; /* Align dropdown to the left edge of the parent */
+    top: 100%; /* Position it below the "Courses" link */
+    max-height: 300px; /* Limit height to prevent it from overflowing */
+    width: 100%; /* Make the dropdown take the full width */
+    overflow-y: auto; /* Enable vertical scrolling for long content */
+    background-color: #efbf04; /* Ensure it matches the design */
+    z-index: 1000; /* Ensure it appears above other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow for better visibility */
   }
-
+ 
   .dropdown a {
     display: inline-block; /* Keep the link inline for proper alignment */
     width: 100%; /* Adjust width to fit content */
     padding: 10px; /* Maintain touch-friendly padding */
     box-sizing: border-box;
   }
-
-  .dropdown-menu {
-    width: 100%; 
-  }
-
   .dropdown-icon {
     cursor: pointer;
     font-size: 12px;
     margin-top: 0; 
     
+    
+  }
+    .dropdown-menu::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .dropdown-menu::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .dropdown-menu::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border-radius: 4px;
   }
 }
+      
 
            
            </style>

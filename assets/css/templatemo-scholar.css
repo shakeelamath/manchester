@@ -811,10 +811,10 @@ Services Style
   display: inline-block;
   text-align: center;
   line-height: 190px;
-  border-radius: 5%; /* Makes the container circular */
+  border-radius: 50%; /* Makes the container circular */
   position: absolute;
   right: 0;
-  top: -95px;
+  top: -125px;
   overflow: hidden; /* Ensures the image stays within the circle */
 }
 
