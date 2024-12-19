@@ -20,83 +20,113 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <style>
-      .dropdown-menu {
-        list-style: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: #efbf04;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        display: none; /* Hidden by default */
-        width: 400px;
-        z-index: 10;
-        max-height: 200px; /* Limit the height of the dropdown */
-        overflow-y: auto; /* Enable vertical scrolling */
-        scrollbar-width: thin; /* Adjust scrollbar for modern browsers */
-        scrollbar-color: #cccccc transparent; /* Set scrollbar colors */
-      }
-      
-      
-      .dropdown-menu li a {
-        color: black;
-        text-decoration: none;
-      }
-      
-      .dropdown-icon {
-        cursor: pointer;
-        font-size: 12px;
-        margin-top: 10px;
-      }
-      
-      .dropdown-menu li a:hover {
-        background-color: black;
-      }
-      
-      /* Customize scrollbar for Webkit browsers (Chrome, Safari, etc.) */
-      .dropdown-menu::-webkit-scrollbar {
-        width: 8px;
-      }
-      
-      .dropdown-menu::-webkit-scrollbar-track {
-        background: transparent;
-      }
-      
-      .dropdown-menu::-webkit-scrollbar-thumb {
-        background: #cccccc;
-        border-radius: 4px;
-      }
-      
-          .dropdown {
-        display: flex;
-      }
-      /* Ensure full width for dropdown links in mobile view */
-      @media (max-width: 768px) {
-  
+.dropdown-menu {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #efbf04;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none; /* Hidden by default */
+  width: 400px;
+  z-index: 10;
+  max-height: 100px; /* Limit the height of the dropdown */
+  overflow-y: auto; /* Enable vertical scrolling */
+  scrollbar-width: thin; /* Adjust scrollbar for modern browsers */
+  scrollbar-color: #cccccc transparent; /* Set scrollbar colors */
+}
 
+
+.dropdown-menu li a {
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-icon {
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.dropdown-menu li a:hover {
+  background-color: black;
+}
+
+/* Customize scrollbar for Webkit browsers (Chrome, Safari, etc.) */
+.dropdown-menu::-webkit-scrollbar {
+  width: 4px;
+}
+
+.dropdown-menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+  background: #cccccc;
+  border-radius: 1px;
+}
+
+    .dropdown {
+  display: flex;
+}
+@media (max-width: 768px) {
   .dropdown {
-    display: flex; /* Ensure flex layout */
-    align-items: center; /* Align icon and text horizontally */
-    height: auto;
+    display: flex; /* Align items in a row */
+    align-items: center; /* Vertically align items */
   }
 
   .dropdown a {
-    display: inline-block; /* Keep the link inline for proper alignment */
-    width: 100%; /* Adjust width to fit content */
-    padding: 10px; /* Maintain touch-friendly padding */
-    box-sizing: border-box;
+    width: 100%; /* Prevent the anchor from taking full width */
+    padding: 10px; /* Add padding for better touch interaction */
+    box-sizing: border-box; /* Include padding in width */
   }
 
   .dropdown-menu {
-    width: 100%; 
+    width: 100%; /* Full width for the dropdown menu */
   }
 
   .dropdown-icon {
     cursor: pointer;
-    font-size: 12px;
-    margin-top: 0; 
-    
+    font-size: 20px;
+    margin-top: 0; /* Ensure alignment with "Courses" */
+    margin-left: 5px; /* Adjust spacing */
   }
 }
+.bg-image-heading {
+  position: relative;
+  color: white; /* Text color for visibility */
+  text-align: center;
+  background: url('assets/images/careertrackprogram.jpg') no-repeat center center; /* Replace with actual image URL */
+  background-size: cover; /* Ensures the image covers the entire area */
+  height: 300px; /* Increase this value to make the section taller */
+  margin: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/* Optional: Removes default margins */
+
+
+
+.bg-image-heading::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit; /* Use the same background image */
+  filter: blur(4px) brightness(50%); /* Apply blur and dimming */
+  z-index: 1; /* Place the blurred layer below the text */
+  border-radius: 15px; /* Match the parent border radius */
+}
+
+.bg-image-heading span {
+  position: relative;
+  z-index: 2; /* Ensures text stays above dimming layer */
+}
+
 
            
            </style>
@@ -165,7 +195,7 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="owl-carousel owl-banner">
-            <div class="item" style="background-image: url(assets/images/careertracksheader.jpg);">
+            <div class="item" style="background-image: url(assets/images/teachertrainingheader.jpg);">
               <div class="header-text">
                 <h2 style="color: transparent;">Turn Your Aspirations into Reality at Manchester British Campus</h2>
                 <p style="color: transparent;">Empowering individuals through world-class education, we provide the tools to unlock your future. Explore our internationally recognized programs and life-changing opportunities today.</p>
@@ -210,7 +240,9 @@
   <div class="services1 section" id="services1">
     <div class="container">
       <div class="row">
-        <h2 style="text-align: center;">Focused Training for Specific Career Paths</h2>
+        <h2 class="bg-image-heading">
+
+        <span>Focused Training for Specific Career Paths</span></h2>
         <div class="col-lg-12 col-md-6">
             <div class="service-item1">
               
