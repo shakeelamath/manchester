@@ -208,16 +208,12 @@ Pre-loader Style
   right: 0;
   bottom: 0;
   background: #08053C;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
-  -webkit-box-pack: center;
   justify-content: center;
   opacity: 1;
   visibility: visible;
   z-index: 9999;
-  -webkit-transition: opacity 0.25s ease;
   transition: opacity 0.25s ease;
 }
 
@@ -234,20 +230,13 @@ Pre-loader Style
   background: transparent;
 }
 
-.preloader-logo {
-  width: 100px; /* Adjust size as needed */
+.preloader-video {
+  width: 350px; /* Adjust size as needed */
   height: auto;
-  animation: spin 2s linear infinite; /* Optional: add spin animation */
+  animation: zoom 2s infinite; /* Optional zoom animation */
 }
 
-@keyframes zoom {
-  0%, 100% {
-    transform: scale(1); /* Normal size */
-  }
-  50% {
-    transform: scale(1.2); /* Slightly larger */
-  }
-}
+
 
 /* 
 ---------------------------------------------
