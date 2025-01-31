@@ -522,7 +522,7 @@ Header Style
 @media (max-width: 767px) {
   .background-header .main-nav .nav,
   .header-area .main-nav .nav {
-    background-color: #f1f0fe;
+    background-color: #D6D4EB;
   }
   .background-header .main-nav .nav li a,
   .header-area .main-nav .nav li a {
@@ -530,13 +530,13 @@ Header Style
     height: 50px;
     font-weight: 400;
     color: #1e1e1e;
-    background-color: #f1f0fe;
+    background-color: #D6D4EB;
      
   }
   .background-header .main-nav .nav li,
   .header-area .main-nav .nav li {
     border-top: 1px solid #ddd;
-    background-color: #f1f0fe;
+    background-color: #D6D4EB;
     height: 50px;
    }
   .background-header .main-nav .nav li:last-child,
@@ -818,7 +818,7 @@ Services Style
 .services1 .service-item1 .main-content1 {
   border-radius: 25px;
   padding: 80px 30px 50px 30px;
-  background-color: #f1f0fe;
+  background-color: #D6D4EB;
   margin-bottom: 30px;
   transition: all .4s;
   text-align: center;
@@ -915,7 +915,7 @@ Services Style
 .services .service-item .main-content {
   border-radius: 25px;
   padding: 80px 30px 50px 30px;
-  background-color: #f1f0fe;
+  background-color: #D6D4EB;
   margin-bottom: 30px;
   margin-right: 80px;
   transition: all .4s;
@@ -954,7 +954,7 @@ About Style
   z-index: -1;
   width: 84%;
   height: 100%;
-  background-color: #f1f0fe;
+  background-color: #D6D4EB;
   content: '';
   border-top-left-radius: 500px;
   border-bottom-left-radius: 500px;
@@ -1035,7 +1035,7 @@ h2.accordion-header button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f1f0fe; /* Light grey background */
+  background-color: #D6D4EB; /* Light grey background */
   text-decoration: none;
   padding: 15px 20px;
   color: black;
@@ -1084,7 +1084,7 @@ Courses Style
 }
 
 .event_filter {
-  background-color: #f1f0fe;
+  background-color: #D6D4EB;
   border-radius: 50px;
   padding: 15px 40px;
   list-style: none;
@@ -1164,7 +1164,7 @@ Courses Style
 }
 
 .events_item {
-  background-color: #f1f0fe;
+  background-color: #D6D4EB;
   border-radius: 25px;
   margin-bottom: 30px;
   position: relative;
@@ -1292,7 +1292,7 @@ Team Style
 .team-member .main-content {
   border-radius: 25px;
   padding: 140px 30px 40px 30px;
-  background-color: #f1f0fe;
+  background-color: #D6D4EB;
   text-align: center;
 }
 
@@ -1352,7 +1352,7 @@ Testimonials Style
   z-index: -1;
   width: 65%;
   height: 100%;
-  background-color: #f1f0fe;
+  background-color: #D6D4EB;
   content: '';
   border-top-left-radius: 500px;
   border-bottom-left-radius: 500px;
@@ -1450,7 +1450,7 @@ Events Style
 }
 
 .events .item {
-  background-color: #f1f0fe;
+  background-color: #D6D4EB;
   border-radius: 25px;
   position: relative;
   padding: 40px;
@@ -1550,7 +1550,7 @@ Contact Style
   z-index: -1;
   width: 65%;
   height: 100%;
-  background-color: #f1f0fe;
+  background-color: #D6D4EB;
   content: '';
   border-top-right-radius: 500px;
   border-bottom-right-radius: 500px;
@@ -1995,7 +1995,7 @@ body {
     margin-right: 0px;
   }
   .contact-us .special-offer {
-    background-color: #f1f0fe;
+    background-color: #D6D4EB;
     margin-bottom: 60px;
     padding: 34px 30px 34px 100px;
     width: 100%;
