@@ -93,6 +93,22 @@
     margin-top: 0; /* Ensure alignment with "Courses" */
     margin-left: 5px; /* Adjust spacing */
   }
+  .calendar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 50px 0;
+   /* Adds space above and below */
+}
+
+.calendar-container {
+  width: 90%;
+  max-width: 100%; /* Limits max width */
+  aspect-ratio: 4 / 3; /* Ensures proportional resizing */
+  position: relative;
+}
+
 }
 
 
@@ -110,7 +126,7 @@
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
       <video autoplay muted loop class="preloader-video">
-        <source src="assets/images/loading.mp4" type="video/mp4" />
+        <source src="assets/images/ManchesterCampusLoadingScreen.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
@@ -193,8 +209,23 @@
       </div>
     </div>
   </div>
+ 
+      <div class="calendar-wrapper">
+        <div class="calendar-container">
+      
+      <iframe 
+        src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FKuala_Lumpur&showPrint=0&src=ZDRkODFhMGM1YWRjOGVkODVhZWY0NWM3MTdhM2Y1OGYwOWZiNTEzYzQzZjIyMzM3OTc3Mzc4Yzg3YTY4OWIxNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23B39DDB"
+        frameborder="0"
+        width="800"
+        height="600"
+        scrolling="no"
+         style="padding: 50px; justify-content: center; align-items: center;"
+         >
+      </iframe>
+      </div>
+      </div>
+   
 
-  <iframe src="https://calendar.google.com/calendar/embed?src=c43f287a0684e4a395cf844f532041fd30cfb31f64c6dd77131c74c44c1a88df%40group.calendar.google.com&ctz=Asia%2FKuala_Lumpur" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
   <div class="contact-us section" id="contact">
     <div class="container">
