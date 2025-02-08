@@ -93,27 +93,30 @@
     margin-top: 0; /* Ensure alignment with "Courses" */
     margin-left: 5px; /* Adjust spacing */
   }
-  .calendar-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 50px 0;
-   /* Adds space above and below */
+  .calendar-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 80vh; /* Adjust as needed */
+    width: 100%;
+    margin-left: 100px;
 }
 
-.calendar-container {
-  width: 90%;
-  max-width: 100%; /* Limits max width */
-  aspect-ratio: 4 / 3; /* Ensures proportional resizing */
-  position: relative;
+iframe {
+    max-width: 800px; /* Limit the width */
+    width: 90%; /* Ensure responsiveness */
+    height: 600px; /* Set height */
+    border: none;
 }
 
+/* Ensure proper centering on smaller screens */
+@media (max-width: 768px) {
+    .calendar-container {
+        height: 70vh;
+        padding: 20px; /* Add some spacing */
+    }
 }
-
-
-
-
+}
 
 
      
@@ -209,8 +212,12 @@
       </div>
     </div>
   </div>
- 
-      
+  
+
+  <div class="calendar-container">
+
+  <iframe src="https://calendar.google.com/calendar/embed?src=d4d81a0c5adc8ed85aef45c717a3f58f09fb513c43f22337977378c87a689b14%40group.calendar.google.com&ctz=Asia%2FKuala_Lumpur" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe> 
+      </div>
 
 
   <div class="contact-us section" id="contact">
