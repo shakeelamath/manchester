@@ -231,9 +231,11 @@ Pre-loader Style
 }
 
 .preloader-video {
-  width: 350px; /* Adjust size as needed */
+  width: 450px; /* Adjust size as needed */
   height: auto;
   animation: zoom 2s infinite; /* Optional zoom animation */
+  pointer-events: none; /* Prevent interactions */
+  user-select: none;
 }
 
 
